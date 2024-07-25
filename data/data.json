@@ -554,6 +554,54 @@
       "Trailer": "https://www.youtube.com/watch?v=MxSIK-jngVA",
       "Poster": "https://procinal.com/uploads/PELICULAS/Img_movies/Img_360x500/360%20X%20500unlugarsilencio.jpg",
       "Type": "adulto"
+    },
+    {
+      "id": "88539498-6fab-48f1-a0d0-1403e8bbe188",
+      "Title": "Thor III",
+      "Description": "Dios nordico ",
+      "Trailer": "https://www.youtube.com/watch?v=Cdp7Xo0x0Uw",
+      "Poster": "https://es.web.img2.acsta.net/pictures/17/08/25/09/36/103601.jpg",
+      "Type": "adulto"
+    },
+    {
+      "id": "04a1ca19-7b9c-42e0-99a9-95e5f2914b3f",
+      "Title": "Batman vs Superman: el origen de la justicia",
+      "Description": "Lucha entre batman y superman por bobadas",
+      "Trailer": "https://www.youtube.com/watch?v=Vzi5Q5aIGJU",
+      "Poster": "https://upload.wikimedia.org/wikipedia/en/3/31/Batman_v_Superman_Dawn_of_Justice_poster.jpg",
+      "Type": "adulto"
+    },
+    {
+      "id": "814f6214-68d3-4790-a6da-191c9f6061c1",
+      "Title": "El increíble castillo vagabundo",
+      "Description": "Sofi es una niña que vive en un castillo que camina",
+      "Trailer": "https://www.google.com/search?sca_esv=74b0166375c0d67f&sca_upv=1&sxsrf=ADLYWIJbgaI38fElZ1fAWv7fXJQEgyaAVg:1721925099717&q=El+incre%C3%ADble+castillo+vagabundo&stick=H4sIAAAAAAAAAEVSS67TMBRVkYpKAQn1DZAYVSyAJv7FeRJDhm8NUZzUSW3HzQ-nzjJYAmOQ2AMjugCGb_Bm7IAhLbLd2T0-55577k1Wy_cvds0uYiQaOrDM9aHZnxe3p_Pi9a7axbEAsRYtO3nMTox2CM3nxeqqFYRhV2KCLqr1tQQd5GXv7IAZLXMaggH3TlxAkNgmTNKgMRIA4nEr-XBKiXA2FZ01vPVe1CWJ3bxYzmVmPGlhJ-wwMUemvekzHPIzS0F73e9_IB3h0FfyGgtEWQikY0pqMHhcZbOtbGL8XtVA_I4xOJFbuCjqxCip43An5sLVaYFx4nJVoylUG-4891EfWexIzadoUiFJlJSsS5QjDayxTcK4dGrrjgmPZasFpQiF2DUEVVpIj4cKJCeBwhcdOYfDZJWLSEfLq-DV2GK8XNOfUqISejA31tTIdUHYqN4RPbLKAm_RSwp7K4lfrATtzD1giZFhGE9SJEsOHSkAaqfSH5hqPXuhqqGB2e1vGHAb07lST4uPL9_8-ft49w59-fbr9-LD-q0s7nfNvjzk91Odj9l4zKZ8LOrN3Xr5cH3erDer9fOHoznsh1dfl9tPanvQRb__-Z2p_bbIh_Gg1HFr8ipnn3V5_LF89g-PjzxEOgMAAA&tbm=vid&source=lnms&fbs=AEQNm0CbCVgAZ5mWEJDg6aoPVcBgWizR0-0aFOH11Sb5tlNhd3zC4y7ZXTSrvvSBSNjw8fViXBe1-ue1pgc4W77YHGSo5xYtnFlb-xea5tkJyrw0DuAEh4FO4nCn3Xjq1QBWtDljQgeVgmhnqwt3UxuoDISsnbs1C-2RDdXYPRNnQrI8n6H2u1BL_VicIcwP4lp5WdNG8yxh4yOTY27lLCVAi9SteJoigw&sa=X&ved=2ahUKEwjY0pfvzsKHAxVpQzABHYB5C3QQ0pQJegQIEBAB&biw=1920&bih=911&dpr=1#fpstate=ive&vld=cid:9cac6b38,vid:TioZt2aBZVE,st:0",
+      "Poster": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZ6KWOrJBxv7MT2r_vWgc3Iv87IjWEXYw_aCc_k19-7BRHc40h",
+      "Type": "infantil"
+    },
+    {
+      "id": "1310857b-9c5d-4c8c-88b7-e92442cc9c07",
+      "Title": "",
+      "Description": "",
+      "Trailer": "",
+      "Poster": "",
+      "Type": ""
+    },
+    {
+      "id": "7e8d794a-053f-4cf4-b9b5-e560e1941f05",
+      "Title": "El viaje de Chihiro",
+      "Description": "Chihiro es una niña caprichosa que debe adentrarse en un mundo de fantasía para poder salvar a sus padres, convertidos en cerdos.",
+      "Trailer": "https://www.youtube.com/watch?v=5Fgq4Osh6XQ",
+      "Poster": "https://es.web.img2.acsta.net/pictures/21/05/11/13/47/5979708.jpg",
+      "Type": "anime"
+    },
+    {
+      "id": "e63b419a-c4f4-4a7e-9716-d53c24c9ba56",
+      "Title": "Mi vecino Totoro",
+      "Description": "Esta historia animada del director Hayao Miyazaki sigue a las estudiantes y hermanas Satsuke y Mei mientras se establecen en su casa de campo con su padre y esperan a que su madre se recupere de una enfermedad en un hospital del área. ",
+      "Trailer": "https://www.youtube.com/watch?v=BjeBG8Xrci8",
+      "Poster": "https://es.web.img3.acsta.net/medias/nmedia/18/70/26/45/20236853.jpg",
+      "Type": "anime"
     }
   ]
 }

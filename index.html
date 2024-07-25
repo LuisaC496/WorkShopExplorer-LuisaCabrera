@@ -12,7 +12,7 @@
     <header class="header">
         <h2 class="header__title">Net Net</h2>
         <form id="form" class="form">
-          <input type="text" id="search" class="search" placeholder="Ingresa el nombre de la pelicula" />
+          <input type="text" id="search" class="search" placeholder="Ingresa la pelicula" />
         </form>
       </header>
 
@@ -43,33 +43,44 @@
   </div>
      
 
-      <form id="newPelicula">
-        <div class="inputs">
-          <label for="nameInput">Nombre:</label>
-          <input type="text" id="nameInput" placeholder="Ingrese nombre de pelicula">
+   
+
+      <main id="main">
+        <section id="anime">
+            <h2>PELICULAS DE ANIME</h2>
+        </section>
+        <section id="adulto">
+            <h2>PELICULAS PARA ADULTOS</h2>
+        </section>
+        <section id="infantil">
+            <h2>PELICULAS PARA NIÑOS</h2>
+        </section>
+    </main>
+
+    <form id="newPelicula">
+      <h2>Crear pelicula</h2>
+      <div class="inputs">
+        <label for="nameInput">Nombre:</label>
+        <input type="text" id="nameInput" placeholder="Ingrese nombre de pelicula">
+      </div>
+      <div class="inputs">
+        <label for="descriptionInput">Descripción</label>
+        <input type="text" id="descriptionInput" placeholder="Ingrese descripción">
+      </div>
+      <div class="inputs">
+        <label for="LinkInput">Link Trailer:</label>
+        <input type="text" id="LinkInput" placeholder="Ingrese link del trailer">
+      </div>
+      <div class="inputs">
+          <label for="imageInput">Imagen:</label>
+          <input type="text" id="imageInput" placeholder="Ingrese link de la imagen">
         </div>
         <div class="inputs">
-          <label for="descriptionInput">Descripción</label>
-          <input type="text" id="descriptionInput" placeholder="Ingrese descripción">
+          <label for="tipoInput">Tipo:</label>
+          <input type="text" id="tipoInput" placeholder="Ingrese tipo de pelicula">
         </div>
-        <div class="inputs">
-          <label for="LinkInput">Link Trailer:</label>
-          <input type="text" id="LinkInput" placeholder="Ingrese linkd el trailer">
-        </div>
-        <div class="inputs">
-            <label for="imageInput">Imagen:</label>
-            <input type="text" id="imageInput" placeholder="Ingrese link de la imagen">
-          </div>
-          <div class="inputs">
-            <label for="tipoInput">Tipo:</label>
-            <input type="text" id="tipoInput" placeholder="Ingrese tipo de pelicula">
-          </div>
-        <button type="submit">Agregar pelicula</button>
-      </form>
-    
-      <main id="main">    
-        
-      </main>
+      <button type="submit">Agregar pelicula</button>
+    </form>
 
 
     </body>

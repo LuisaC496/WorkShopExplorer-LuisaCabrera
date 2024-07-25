@@ -1,38 +1,62 @@
-export const showData = async (fetchedData, container) => {
-    container.innerHTML = "";
-    
+export const showData = async (fetchedData) => {
+    // Objeto para agrupar películas por tipo
+    const PeliTipos = {
+        anime: [],
+        adulto: [],
+        infantil: []
+    };
 
+    // Clasificar las películas por tipo
     fetchedData.forEach((element) => {
-        let { id, Type, Title, Poster, Trailer, Description, Value } = element;
-
-        const div = document.createElement("div");
-        div.classList.add("pelicula");
-        div.setAttribute('id', id);
-        div.innerHTML = `
-            <img src="${Poster}" />
-            <div class="pelicula-info">
-                <h3>${Title}</h3>
-                <h4>Tipo: ${Type}</h4>
-                <button class="ver-detalle-btn" data-bs-toggle="modal" data-bs-target="#detallePeliculaModal">Ver Detalle</button>
-            </div>
-        `;
-        const btnVerDetalle = div.querySelector('.ver-detalle-btn');
-        btnVerDetalle.addEventListener('click', () => {
-            // Mostrar detalles en el modal
-            document.getElementById('detalleTitulo').textContent = Title;
-            document.getElementById('detalleTipo').textContent = `Tipo: ${Type}`;
-            document.getElementById('detalleDescripcion').textContent = Description;
-            document.getElementById('detallePoster').src = Poster;
-            document.getElementById('detalleValue').textContent= `Puntuación: ${Value}`;
-            const reproducirBtn = document.getElementById('reproducirTrailerBtn');
-            reproducirBtn.addEventListener('click', () => {
-                window.open(Trailer, '_blank');
-
-            });
-
-        });
-        container.appendChild(div);
-
+        let { Type } = element;
+        switch (Type.toLowerCase()) {
+            case 'anime':
+                PeliTipos.anime.push(element);
+                break;
+            case 'adulto':
+                PeliTipos.adulto.push(element);
+                break;
+            case 'infantil':
+                PeliTipos.infantil.push(element);
+                break;
+            default:
+                break;
+        }
     });
 
+    for (const type in PeliTipos) {
+        if (PeliTipos[type].length > 0) {
+            const section = document.getElementById(type); 
+
+            PeliTipos[type].forEach((pelicu) => {
+                const { id, Title, Poster, Trailer, Description, Value } = pelicu;
+                const div = document.createElement("div");
+                div.classList.add("pelicula");
+                div.setAttribute('id', id);
+                div.innerHTML = `
+                    <img src="${Poster}" />
+                    <div class="pelicula-info">
+                        <h3>${Title}</h3>
+                        <h4>Tipo: ${type}</h4>
+                        <button class="ver-detalle-btn" data-bs-toggle="modal" data-bs-target="#detallePeliculaModal">Ver Detalle</button>
+                    </div>
+                `;
+                const btnVerDetalle = div.querySelector('.ver-detalle-btn');
+                btnVerDetalle.addEventListener('click', () => {
+                    // Mostrar detalles en el modal
+                    document.getElementById('detalleTitulo').textContent = Title;
+                    document.getElementById('detalleTipo').textContent = `Tipo: ${type}`;
+                    document.getElementById('detalleDescripcion').textContent = Description;
+                    document.getElementById('detallePoster').src = Poster;
+                    document.getElementById('detalleValue').textContent = `Puntuación: ${Value}`;
+                    const reproducirBtn = document.getElementById('reproducirTrailerBtn');
+                    reproducirBtn.addEventListener('click', () => {
+                        window.open(Trailer, '_blank');
+                    });
+                });
+
+                section.appendChild(div);
+            });
+        }
+    }
 };

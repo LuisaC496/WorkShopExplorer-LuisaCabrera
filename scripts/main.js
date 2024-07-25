@@ -1,10 +1,11 @@
 import { getData } from "../modules/getData.js";
 import { postData } from "../modules/postData.js";
-import { searchPelicula } from "../modules/searchPelicula.js";
 import { showData } from "../modules/showData.js";
 
 const main = document.getElementById("main");
 const createForm = document.getElementById("newPelicula");
+const searchForm = document.getElementById("form");
+const searchInput = document.getElementById("search");
 export const url = 'http://localhost:3000/peliculas'
 
 
@@ -25,16 +26,7 @@ createForm.addEventListener("submit", async (e) => {
     }
     await postData(url, newPelicula); 
     createForm.reset();
+    peliculas.push(newPelicula); // Actualiza el array de películas localmente
+    showData(peliculas, main); // Actualiza la visualización de las películas
+    
   })
-
- //BUSCAR PELICULA
-const searchValue = document.getElementById("search");
-
-searchValue.addEventListener("input", (e) => {
-  const resultados = searchPelicula(e.target.value, peliculas);
-  if (resultados.length > 0) {
-    showData(resultados, main);
-  } else {
-    main.innerHTML = "Su busqueda no generó resultados.";
-  }
-})
